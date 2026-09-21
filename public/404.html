@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <title>Winter Dev Archive</title>
     <script>
-      // GitHub Pages SPA 라우팅 리다이렉트
-      // /winter-dev-archive/about → /winter-dev-archive/?p=/about
-      var segmentCount = 1;
+      // GitHub Pages SPA 라우팅 리다이렉트 (루트 경로용)
+      // /about → /?/about
+      var segmentCount = 0;
       var l = window.location;
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +

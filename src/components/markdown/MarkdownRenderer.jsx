@@ -79,7 +79,7 @@ function CheckboxItem({ storageKey, initialChecked }) {
   );
 }
 
-// BASE_URL: dev='/', prod='/winter-dev-archive/'
+// BASE_URL: dev='/', prod='/' (GitHub Pages 루트 배포)
 // processedContent의 text-level 치환은 raw <img src="..."> HTML에만 매치되고, 실제 186개
 // 교안이 쓰는 표준 마크다운 ![]() 문법에는 매치되지 않아 GitHub Pages 배포본에서 콘텐츠
 // 이미지가 404 나던 원인이었다. ![]()는 react-markdown 파싱 후 img 컴포넌트로 오므로,

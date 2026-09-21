@@ -21,7 +21,7 @@ function ScrollToTop() {
 
 // import.meta.env.BASE_URL:
 //   dev   → '/'
-//   build → '/winter-dev-archive/'  (vite.config.js 기준)
+//   build → '/'  (vite.config.js 기준, GitHub Pages 루트 배포)
 function App() {
   return (
     <BrowserRouter basename={import.meta.env.BASE_URL}>
