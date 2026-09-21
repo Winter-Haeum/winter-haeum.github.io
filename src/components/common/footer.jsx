@@ -146,9 +146,28 @@ function Footer() {
             gap: 1,
           }}
         >
-          <Typography variant='caption' sx={{ color: 'text.disabled' }}>
-            © 2025– Winter Dev Archive
-          </Typography>
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+            <Typography variant='caption' sx={{ color: 'text.disabled' }}>
+              © 2025– Winter Dev Archive
+            </Typography>
+            <Typography
+              component={Link}
+              to='/privacy'
+              variant='caption'
+              sx={(theme) => ({
+                color: theme.palette.text.disabled,
+                textDecoration: 'none',
+                '&:hover': { color: theme.palette.primary.main },
+                '&:focus-visible': {
+                  outline: `2px solid ${theme.palette.primary.main}`,
+                  outlineOffset: '2px',
+                  borderRadius: '2px',
+                },
+              })}
+            >
+              개인정보처리방침
+            </Typography>
+          </Box>
           <Typography variant='caption' sx={{ color: 'text.disabled', fontStyle: 'italic' }}>
             "크림 노트에 보라 잉크로 필기한 디지털 참고서"
           </Typography>
