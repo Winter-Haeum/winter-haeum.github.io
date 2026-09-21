@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="개발·AI·디지털 도구 학습 내용을 정리하고 다시 찾아보기 위한 개인 학습 아카이브"
+    />
+    <title>Winter Dev Archive</title>
+    <script>
+      // GitHub Pages SPA 라우팅: 404.html이 ?p= 로 리다이렉트한 경우 URL 복원
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function (s) {
+            return s.replace(/~and~/g, '&');
+          });
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) +
+              decoded[0] +
+              (decoded[1] ? '?' + decoded[1] : '') +
+              l.hash
+          );
+        }
+      })(window.location);
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

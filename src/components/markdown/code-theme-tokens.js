@@ -1,0 +1,93 @@
+/**
+ * code-theme-tokens — CodeBlock 신택스 하이라이팅 토큰 색상
+ *
+ * 04-color-palette.md 코드 블록 섹션 기준.
+ * CodeBlock.jsx는 이 파일을 import해 렌더링에 집중한다.
+ *
+ * 구조: CODE_THEME.light / CODE_THEME.dark
+ */
+export const CODE_THEME = {
+  light: {
+    blockBg:      '#EAE3D8',
+    blockBorder:  '#CEC8BC',
+    headerBg:     '#DDD5C8',
+    headerBorder: '#CEC8BC',
+    langLabel:    '#7A7490',
+    baseText:     '#2C2840',
+    copyIdle:     '#7A7490',
+    copyDone:     '#6070C0',
+
+    // hljs 토큰
+    keyword:      '#8464C8',
+    builtIn:      '#9060B8',
+    type:         '#8464C8',
+    literal:      '#A87EB0',
+    number:       '#A87EB0',
+    operator:     '#4A4560',
+    punctuation:  '#4A4560',
+    property:     '#A880C0',
+    string:       '#7A96C0',
+    comment:      '#B8B2C8',
+    doctag:       '#B8B2C8',
+    meta:         '#7A7490',
+    tag:          '#7080C8',
+    name:         '#7080C8',
+    attr:         '#A880C0',
+    attribute:    '#A880C0',
+    variable:     '#2C2840',
+    params:       '#2C2840',
+    func:         '#9060B8',
+    title:        '#9060B8',
+    titleClass:   '#8464C8',
+    section:      '#8464C8',
+    selectorTag:  '#7080C8',
+    selectorCls:  '#9060B8',
+    selectorId:   '#8464C8',
+    additionFg:   '#6070C0',
+    additionBg:   '#EAEef8',
+    deletionFg:   '#A85890',
+    deletionBg:   '#F5E8F0',
+  },
+
+  dark: {
+    blockBg:      '#16142A',
+    blockBorder:  '#3C3858',
+    headerBg:     '#24203A',
+    headerBorder: '#3C3858',
+    langLabel:    '#8880A0',
+    baseText:     '#E8E4EE',
+    copyIdle:     '#8880A0',
+    copyDone:     '#A4AADA',
+
+    // hljs 토큰
+    keyword:      '#C8B4F0',
+    builtIn:      '#B090D4',
+    type:         '#C8B4F0',
+    literal:      '#D4A8CC',
+    number:       '#D4A8CC',
+    operator:     '#C4BCCE',
+    punctuation:  '#C4BCCE',
+    property:     '#C8A4C4',
+    string:       '#A8C4D8',
+    comment:      '#6C6880',
+    doctag:       '#6C6880',
+    meta:         '#8880A0',
+    tag:          '#A4AADA',
+    name:         '#A4AADA',
+    attr:         '#C8A4C4',
+    attribute:    '#C8A4C4',
+    variable:     '#E8E4EE',
+    params:       '#E8E4EE',
+    func:         '#B090D4',
+    title:        '#B090D4',
+    titleClass:   '#C8B4F0',
+    section:      '#C8B4F0',
+    selectorTag:  '#A4AADA',
+    selectorCls:  '#B090D4',
+    selectorId:   '#C8B4F0',
+    additionFg:   '#A4AADA',
+    additionBg:   '#20243C',
+    deletionFg:   '#D4A8C4',
+    deletionBg:   '#2C1A2C',
+  },
+};
